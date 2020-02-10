@@ -1,0 +1,87 @@
+@charset "UTF-8";/*中文编码*/
+/*css 初始化 */margin,padding
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }/*外边距,内边距都为0*/
+
+fieldset, img,input,button { border:none; padding:0;margin:0;outline-style:none; }   /*去掉input等聚焦时的蓝色边框*/
+/*border 边框 none无边框 padding内边框 margin外边框 outline-style轮廓样式*/
+ul, ol { list-style:none; }/*去掉列表的点*/
+/*list-style把图像设置为列表项目 none无边框*/
+input { padding-top:0; padding-bottom:0; font-family: "SimSun","宋体";}
+/*input表单元素 padding-top上内边距 padding-bottom下内边框 font-family 段落设置字体*/
+select, input { vertical-align:middle;}
+/*vertical-align设置元素的垂直对齐方式middle*/
+select, input, textarea { font-size:12px; margin:0; }
+/*font-size可设置字体尺寸 margin外边距*/
+textarea { resize:none; } /*防止拖动*/
+/*resize规定是否用户调整元素的尺寸*/
+img {border:0; vertical-align:middle; display: block;}  /*  去掉图片低测默认的3像素空白缝隙，或者用display：block也可以*/
+/*border边距 vertical-align middle*/
+table { border-collapse:collapse; }
+/*table表格 border-collapse:collapse设置合并边框模型	solid设置4个边框样式*/
+body {
+   /* font:14px/150% Arial,Verdana,"\5b8b\4f53";*/
+    /*color:#666;*/
+    background:#fff;
+    /*background设置所有背景属性*/
+}
+.clearfix:before,.clearfix:after {  /*清楚浮动*/
+	/*after伪元素在元素之后加内容*/
+    content:"";
+    /*content: 用来插入生成内容;*/
+    display:table;
+    /*displa规定元素应该生成的框类型 table样式*/
+}
+.clearfix:after{clear:both;}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+a {color:#666; text-decoration:none; }
+a:hover{color:#C81623;}
+h1,h2,h3,h4,h5,h6 {text-decoration:none;font-weight:normal;font-size:100%;}  /*设置h标签的大小，设置跟父亲一样大的字体font-size:100%;*/
+s,i,em{font-style:normal;text-decoration:none;}
+.col-red{color: #C81623!important;}
+
+/*公共类*/
+.w {  /*版心 提取 */
+    width: 1210px;margin:0 auto;
+    /*auto是随内容的高度而撑开*/
+}
+.cf{}
+			.cf::after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+.fl {
+    float:left;
+    /*向左浮动*/
+}
+.fr {
+    float:right;
+    /*向右浮动*/
+}
+.al {
+    text-align:left;
+    /*text-align文本对齐 left左浮动*/
+}
+.ac {
+    text-align:center;
+    /*文本居中*/
+}
+.ar {
+    text-align:right;
+    /*text-align: right;文本向右对齐*/
+}
+.hide {
+    display:none;
+    /*元素应该生成的框类型*/
+}
+.font12{ font-size: 12px;}
+.font14{ font-size: 14px;}
+.font16{ font-size: 16px;}
+
+/*公共部分*/
+/*头部导航开始*/
+
+
+/*尾部部导航开始*/
